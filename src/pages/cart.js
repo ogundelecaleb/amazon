@@ -4,7 +4,7 @@ import Image from "next/image";
 import CheckoutProduct from "../components/CheckoutProduct";
 import { useSelector } from "react-redux";
 
-import Currency from "react-currency-formatter";
+import CurrencyFormat from 'react-currency-format';
 import { useSession } from "next-auth/react";
 import {loadStripe} from "@stripe/stripe-js"
 import { useRouter } from "next/router";
@@ -98,7 +98,7 @@ function checkout() {
               <h2>
                 Subtotal ({items.length} items) :{" "}
                 <span className="font-bold">
-                  <Currency quantity={total} currency="NGN" />
+                  <CurrencyFormat value={total} displayType={'text'} prefix={'NGN'} />
                 </span>
               </h2>
               <button

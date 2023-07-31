@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import MenuIcon from "@heroicons/react/24/outline";
 import { useState } from "react";
-import Currency from "react-currency-formatter";
+import CurrencyFormat from 'react-currency-format';
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../slices/basketSlice";
 
@@ -70,7 +70,7 @@ function Product({ id, title, price, description, category, image }) {
           ))}
       </div>
       <p className="text-xs my-2 line-clamp-2 text-black">{description}</p>
-      <Currency quantity={price} currency="NGN" className="text-black" />
+      <CurrencyFormat value={price} displayType={'text'} prefix={'NGN'}  className="text-black" />
 
       {hasPrime && (
         <div className="flex items-center space-x-2 -mt-5 text-black">
