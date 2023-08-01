@@ -97,7 +97,7 @@ function checkout() {
             <>
               <h2>
                 Subtotal ({items.length} items) :{" "}
-                <span className="font-bold">
+                <span className="font-bold text-black">
                   NGN{total}
                 </span>
               </h2>
