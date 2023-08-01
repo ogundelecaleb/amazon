@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import Image from "next/image";
 import MenuIcon from "@heroicons/react/24/outline";

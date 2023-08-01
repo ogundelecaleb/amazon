@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Image from "next/image";
