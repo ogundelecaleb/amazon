@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Currency from "react-currency-formatter";
 import { addToBasket, removeFromBasket } from "../slices/basketSlice";
 import { useDispatch } from "react-redux";
 
@@ -59,7 +58,7 @@ function CheckoutProduct({
             ))}
         </div>
         <p className="txt-xs my-2 line-clamp-3">{description}</p>
-        <Currency quantity={price} Currency="NGN" className="text-black" />
+        <p>NGN{price}</p>
         {hasPrime && (
           <div className="flex items-center space-x-2">
             {" "}
